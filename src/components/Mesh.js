@@ -5,7 +5,7 @@ const Mesh = (root, props) => {
   const texture = getTextureFromProps('Mesh', props)
   const { vertices, uvs, indices, drawMode = PIXI.mesh.Mesh.DRAW_MODES.TRIANGLES } = props
 
-  const mesh = new PIXI.mesh.Mesh(texture, vertices, uvs, indices, drawMode)
+  const mesh = new PIXI.SimpleMesh(texture, vertices, uvs, indices, drawMode)
 
   mesh.applyProps = (instance, oldProps, newProps) => {
     const { image, texture, ...props } = newProps

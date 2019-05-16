@@ -128,7 +128,7 @@ declare namespace _ReactPixi {
   }
 
   interface IBitmapText
-    extends Container<Omit<PIXI.extras.BitmapText, "anchor">> {
+    extends Container<Omit<PIXI.BitmapText, "anchor">> {
     /**
      * The anchor sets the origin point of the text.
      * The default is `(0,0)`, this means the text's origin is the top left.
@@ -149,7 +149,7 @@ declare namespace _ReactPixi {
      *
      * style={{ font: '50px Desyrel' }}
      */
-    style?: PIXI.extras.BitmapTextStyle;
+    style?: PIXI.BitmapTextStyle;
   }
 
   interface INineSlicePlane extends Container<PIXI.mesh.NineSlicePlane> {
@@ -188,12 +188,12 @@ declare namespace _ReactPixi {
      *
      * properties={{ vertices: true, position: true, rotation: false }}
      */
-    properties?: PIXI.particles.ParticleContainerProperties;
+    properties?: PIXI.ParticleContainerProperties;
   }
 
   interface ITilingSprite
     extends Container<
-      Omit<PIXI.extras.TilingSprite, "tileScale" | "tilePosition">
+      Omit<PIXI.TilingSprite, "tileScale" | "tilePosition">
     > {
     /**
      * The scale factor of the tile.
@@ -246,7 +246,7 @@ declare namespace _ReactPixi {
     image?: string;
   }
 
-  interface IMesh extends Container<PIXI.mesh.Mesh> {
+  interface IMesh extends Container<PIXI.SimpleMesh> {
     /**
      * Directly apply an image to a Mesh.
      * The image will be automatically texturized and chached.

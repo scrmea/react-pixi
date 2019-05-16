@@ -25,7 +25,7 @@ const ParticleContainer = (root, props) => {
     ...(props.destroyOptions || {}),
   }
 
-  const container = new PIXI.particles.ParticleContainer(maxSize, properties, batchSize, autoResize)
+  const container = new PIXI.ParticleContainer(maxSize, properties, batchSize, autoResize)
 
   container.willUnmount = (instance, child, parent) => {
     instance.destroy(destroyOptions)

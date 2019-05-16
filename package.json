@@ -1,6 +1,6 @@
 {
   "name": "@inlet/react-pixi",
-  "version": "0.5.9",
+  "version": "0.5.10",
   "description": "Write PixiJS applications using React declarative style.",
   "main": "index.js",
   "umd:main": "umd.js",
@@ -53,13 +53,12 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "@types/jest": "^24.0.0",
-    "@types/pixi.js": "^4.8.6",
     "@types/react": "^16.8.1",
     "@types/react-dom": "^16.0.11",
     "babel-core": "^7.0.0-beta.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
-    "canvas-prebuilt": "1",
+    "canvas": "2.5.0",
     "cross-env": "^5.2.0",
     "docz": "^0.11.1",
     "eslint": "^5.13.0",
@@ -70,7 +69,7 @@
     "if-env": "^1.0.4",
     "jest": "^24.1.0",
     "lodash": "^4.17.10",
-    "pixi.js": "^4.8.5",
+    "pixi.js": "^5.0.2",
     "prettier": "^1.16.4",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
@@ -88,7 +87,7 @@
     "rollup-plugin-terser": "^4.0.4"
   },
   "peerDependencies": {
-    "pixi.js": "^4.8.5",
+    "pixi.js": "^5.0.2",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"

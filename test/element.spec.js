@@ -30,17 +30,17 @@ describe('createElement', () => {
 
   test('create ParticleContainer', () => {
     const element = createElement(TYPES.ParticleContainer)
-    expect(element).toBeInstanceOf(PIXI.particles.ParticleContainer)
+    expect(element).toBeInstanceOf(PIXI.ParticleContainer)
   })
 
   test('create BitmapText', () => {
     const element = createElement(TYPES.BitmapText, { text: 'foobar', style: { font: '35px Desyrel' } })
-    expect(element).toBeInstanceOf(PIXI.extras.BitmapText)
+    expect(element).toBeInstanceOf(PIXI.BitmapText)
   })
 
   test('create TilingSprite', () => {
     const element = createElement(TYPES.TilingSprite, { texture: emptyTexture })
-    expect(element).toBeInstanceOf(PIXI.extras.TilingSprite)
+    expect(element).toBeInstanceOf(PIXI.TilingSprite)
   })
 
   test('create Graphics', () => {
@@ -50,17 +50,17 @@ describe('createElement', () => {
 
   test('create NineSlicePlane', () => {
     const element = createElement(TYPES.NineSlicePlane, { texture: emptyTexture })
-    expect(element).toBeInstanceOf(PIXI.mesh.NineSlicePlane)
+    expect(element).toBeInstanceOf(PIXI.NineSlicePlane)
   })
 
   test('create Mesh', () => {
     const element = createElement(TYPES.Mesh, { texture: emptyTexture })
-    expect(element).toBeInstanceOf(PIXI.mesh.Mesh)
+    expect(element).toBeInstanceOf(PIXI.SimpleMesh)
   })
 
   test('create Rope', () => {
     const element = createElement(TYPES.Rope, { texture: emptyTexture, points: [] })
-    expect(element).toBeInstanceOf(PIXI.mesh.Rope)
+    expect(element).toBeInstanceOf(PIXI.Rope)
   })
 
   test('get undefined', () => {

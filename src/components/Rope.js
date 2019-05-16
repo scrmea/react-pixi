@@ -6,7 +6,7 @@ const Rope = (root, props) => {
   const texture = getTextureFromProps('Rope', props)
   const { points } = props
 
-  const rope = new PIXI.mesh.Rope(texture, points)
+  const rope = new PIXI.Rope(texture, points)
 
   rope.applyProps = (instance, oldProps, newProps) => {
     const { image, texture, ...props } = newProps

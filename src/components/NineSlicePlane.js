@@ -5,7 +5,7 @@ const NineSlicePlane = (root, props) => {
   const { leftWidth = 10, topHeight = 10, rightWidth = 10, bottomHeight = 10 } = props
   const texture = getTextureFromProps('NineSlicePlane', props)
 
-  const nineSlicePlane = new PIXI.mesh.NineSlicePlane(texture, leftWidth, topHeight, rightWidth, bottomHeight)
+  const nineSlicePlane = new PIXI.NineSlicePlane(texture, leftWidth, topHeight, rightWidth, bottomHeight)
 
   nineSlicePlane.applyProps = (instance, oldProps, newProps) => {
     const { image, texture, ...props } = newProps
